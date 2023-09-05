@@ -1,0 +1,1 @@
+# seek function is use to reding lines of files
