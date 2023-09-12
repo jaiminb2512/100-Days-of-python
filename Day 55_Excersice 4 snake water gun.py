@@ -2,13 +2,13 @@ while True:
     import random
     
     a = input("Enter your choice : ")
-    game = ["Snake", "Water", "Gun"]
+    game = ["Snake", "snake","Water","water","Gun", "gun"]
 
-    if a == game[0]:
+    if a == game[0] or a == game[1]:
         a = 1
-    elif a== game[1]:
+    elif a== game[2] or a == game[3]:
         a = 2
-    elif a == game[2]:
+    elif a == game[4] or a==game[5]:
         a = 3
 
     lst = [1,2,3]
@@ -41,14 +41,14 @@ while True:
     if c == lst[0]:
         c = game[0]
     elif c == lst[1]:
-        c = game[1]
+        c = game[2]
     else :
         c = game[2]
 
     if a == lst[0]:
         a = game[0]
     elif a == lst[1]:
-        a = game[1]
-    else:
         a = game[2]
+    else:
+        a = game[4]
     print(f"Computer choose {c} and you choose {a}")
